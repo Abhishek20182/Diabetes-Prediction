@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Diabetes Predictor</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='Diabetes_logo.jpg') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+        <div class="heading">
+            <h2 class='heading-h2'><span class="heading_font">Diabetes Predictor</span></h2>
+        </div>
+
+        <!--Main Body -->
+        <div class="result">
+        	{% if prediction==1 %}
+            <h1>Prediction: Oops! You have Diabetes </h1>
+            <img src="{{ url_for('static', filename='diabetes_cure_meta.png') }}" class='img'>
+            <h4>Please Visit <a href="https://www.nhp.gov.in/disease/digestive/pancreas/diabetes-mellitus">Here</a></h4>
+
+            {% elif prediction==0 %}
+            <h1>Prediction: Great! You don't have diabetes</h1>
+            <img src="{{ url_for('static', filename='party-conversation-in-english-1024x683.jpg') }}" class='img'>
+        
+            {% endif %}
+
+        </div>
+
+<!-- Footer -->
+<div class='footer'>
+    <div class="contact">
+        <a target="_blank" href="https://github.com/Abhishek20182/Diabetes-Prediction"><i class="fab fa-github fa-lg contact-icon"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/abhishek-tiwari-nitrr/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+    </div>
+    <p class='footer-des'> Made with ❤️ by Abhishek Tiwari <br>
+        &copy; 2021, All Rights Reversed</p>
+</div>
+
+
+</body>
+</html>
+
