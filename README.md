@@ -36,5 +36,7 @@ You need to be able to work in a Jupyter Notebook on your computer. The followin
 <a href="https://diabetes-predictor-mlapp.herokuapp.com/"><h2 align='center'> https://diabetes-predictor-mlapp.herokuapp.com/ </h2></a>
 
 ## Demo <a name="Demo"></a>
+![Demo GIF](static/demo.gif)
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
+Dataset of diabetes, taken from the hospital Frankfurt, Germany. To know more please visit [Here](https://www.kaggle.com/johndasilva/diabetes).
